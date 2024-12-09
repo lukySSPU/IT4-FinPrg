@@ -35,12 +35,12 @@ Projekt je implementován v **Unreal Engine** a částečně v **Unity** pro sro
 
 ## 🔍 **Porovnání Unity vs Unreal Engine**  
 
-| Kritérium           | Unity                                 | Unreal Engine                         |
-|----------------------|---------------------------------------|---------------------------------------|
-| **Grafický výkon**   | Vhodný pro menší a středně velké projekty | Špičkový výkon pro AAA hry.          |
-| **Scripting**        | C# – snadné na naučení                | C++ a Blueprints – větší flexibilita. |
-| **Portály**          | Omezená podpora                      | Pokročilá podpora seamless portálů.   |
-| **Mechanika perspektivy** | Snadno implementovatelné          | Možná složitější integrace.           |
+| **Kritérium**             | **Unity**                                 | **Unreal Engine**                         |
+|---------------------------|-------------------------------------------|-------------------------------------------|
+| **Grafický výkon**         | Vhodný pro menší a středně velké projekty | Špičkový výkon pro AAA hry.                |
+| **Scripting**              | C# – snadné na naučení                    | C++ a Blueprints – větší flexibilita.      |
+| **Uživatelská přívětivost**| Intuitivní rozhraní, vhodné pro začátečníky | Robustní, ale může být náročnější na naučení. |
+| **Celkové výhody**         | Snadná použitelnost, rychlý prototyp, vhodné pro menší hry | Výkonný engine, špičková grafika, ideální pro velké projekty. |
 
 ---
 
