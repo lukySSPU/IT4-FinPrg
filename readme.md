@@ -1,59 +1,36 @@
-# **Seamless Portals Game Mechanic**  
-**Graduation Project by Lukáš Olbrecht**
+# Boundaries of Space and Perspective in Video Games
 
-## 📖 **Popis projektu**  
-Tento projekt je inspirován hrami jako *Superliminal* a zkoumá herní mechaniky založené na perspektivě a změně velikosti objektů. Hráč může procházet **seamless portály**, které umožňují:  
-- Změnu velikosti hráče na základě velikosti portálu.  
-- Přizpůsobení orientace při průchodu nakloněnými portály.  
+**Author:** Lukáš Olbrecht  
 
-Projekt je implementován v **Unreal Engine** a částečně v **Unity** pro srovnání obou technologií.
+## About the Project
+This project explores and implements two groundbreaking gameplay mechanics that challenge the conventional boundaries of space and perspective in video games:
 
----
+1. **Seamless Portals**  
+   Experience portals that allow smooth traversal between spaces, including dynamic resizing of the player and orientation adjustments. This mechanic is powered by *Unreal Engine*.
 
-## 🎮 **Funkce**  
-1. **Seamless portály**  
-   - Hráč může plynule projít portálem.  
+   ![Seamless Portal](./Images/seamless-portal.png)
 
-2. **Změna velikosti hráče**  
-   - Portály automaticky přizpůsobí velikost hráče podle své vlastní velikosti.  
+2. **Forced Perspective**  
+   Inspired by the game *Superliminal*, this mechanic manipulates object size based on the player's perspective. It has been implemented using *Unity*.
 
-3. **Změna orientace**  
-   - Hráčova poloha a rotace jsou přizpůsobeny při průchodu portálem.  
+   ![Seamless Portal](./Images/forced-perspective-1.png)
+   ![Seamless Portal](./Images/forced-perspective-2.png)
 
-4. **Mechanika perspektivy (Superliminal-like)**  
-   - Objekty mohou růst či zmenšovat na základě perspektivy hráče (implementováno v Unity).  
+By merging these technologies, the project demonstrates how creative use of space and perspective can enhance immersion and innovation in game design.
 
----
+## Technologies Used
+- **Unreal Engine**: For the creation of seamless portals.
+- **Unity**: For implementing the forced perspective mechanic.
 
-## ⚙️ **Technologie a nástroje**  
-- **Unreal Engine** – implementace seamless portálů a změny velikosti.  
-- **Unity** – implementace perspektivních změn velikosti objektů.  
-- **Blueprints** (Unreal Engine)  
-- **C#** (Unity)  
+## Highlights
+- **Seamless Immersion**: Walk through portals as if the world is one continuous space.
+- **Perspective-Based Gameplay**: Redefine reality by manipulating objects based on how you see them.
 
----
+## Purpose
+This project serves as a showcase of how space and perspective can be reimagined in video games. It aims to inspire game developers and contribute to broader research in game mechanics.
 
-## 🔍 **Porovnání Unity vs Unreal Engine**  
+## Contact
+For inquiries or feedback, feel free to reach out to me via GitHub or other platforms.
 
-| **Kritérium**             | **Unity**                                 | **Unreal Engine**                         |
-|---------------------------|-------------------------------------------|-------------------------------------------|
-| **Grafický výkon**         | Vhodný pro menší a středně velké projekty | Špičkový výkon pro AAA hry.                |
-| **Scripting**              | C# – snadné na naučení                    | C++ a Blueprints – větší flexibilita.      |
-| **Uživatelská přívětivost**| Intuitivní rozhraní, vhodné pro začátečníky | Robustní, ale může být náročnější na naučení. |
-| **Celkové výhody**         | Snadná použitelnost, rychlý prototyp, vhodné pro menší hry | Výkonný engine, špičková grafika, ideální pro velké projekty. |
-
----
-
-## 👤 **Autor**  
-Projekt vytvořil **Lukáš Olbrecht** jako součást své závěrečné práce.  
-
----
-
-## 📝 **Inspirace**  
-- Hra **Superliminal** – perspektivní mechaniky.  
-- Unreal Engine portálové technologie.  
-
----
-
-## 📜 **Licence**  
-Tento projekt je licencován pod **MIT licencí**.  
+## License
+This project is intended for demonstration purposes only. Use of the content is permitted with the author's consent.
