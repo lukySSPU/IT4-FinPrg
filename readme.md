@@ -16,8 +16,6 @@ This project explores and implements two groundbreaking gameplay mechanics that 
    ![Seamless Portal](./Images/forced-perspective-1.png)
    ![Seamless Portal](./Images/forced-perspective-2.png)
 
-By merging these technologies, the project demonstrates how creative use of space and perspective can enhance immersion and innovation in game design.
-
 ## Technologies Used
 - **Unreal Engine**: For the creation of seamless portals.
 - **Unity**: For implementing the forced perspective mechanic.
@@ -28,9 +26,3 @@ By merging these technologies, the project demonstrates how creative use of spac
 
 ## Purpose
 This project serves as a showcase of how space and perspective can be reimagined in video games. It aims to inspire game developers and contribute to broader research in game mechanics.
-
-## Contact
-For inquiries or feedback, feel free to reach out to me via GitHub or other platforms.
-
-## License
-This project is intended for demonstration purposes only. Use of the content is permitted with the author's consent.
