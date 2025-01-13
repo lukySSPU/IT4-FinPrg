@@ -30,6 +30,7 @@ public class PickupObjects : MonoBehaviour
     private int NUMBER_OF_GRID_COLUMNS = 12;
     private const float SCALE_MARGIN = 0.001f;
 
+    // Called once per frame to handle object interaction and updates
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -44,6 +45,7 @@ public class PickupObjects : MonoBehaviour
         UpdateScale();
     }
 
+    // Adjusts the object's position to stay in front of any detected obstacles
     void MoveInFrontOfObstacles()
     {
         if (shapedGrid.Count == 0) throw new System.Exception("Shaped grid calculation error");
@@ -67,6 +69,7 @@ public class PickupObjects : MonoBehaviour
         heldObjectTF.localPosition = newLocalPos;
     }
 
+    // Dynamically updates the object's scale based on distance from the player
     void UpdateScale()
     {
         float newScale = (transform.position - heldObjectTF.position).magnitude / orgDistanceToScaleRatio;
@@ -78,7 +81,7 @@ public class PickupObjects : MonoBehaviour
         heldObjectTF.position = newPos;
     }
 
-    //picks up object
+    // Handles picking up and releasing objects
     void PickUpObject()
     {
         if (heldObject != null)
@@ -126,6 +129,7 @@ public class PickupObjects : MonoBehaviour
         SetupShapedGrid(bbPoints);
     }
 
+    // Retrieves the bounding box points of the held object
     private Vector3[] GetBoundingBoxPoints()
     {
         Vector3 size = heldObject.GetComponent<Renderer>().localBounds.size;
@@ -147,6 +151,7 @@ public class PickupObjects : MonoBehaviour
         return bbPoints;
     }
 
+    // Sets up the grid of points used for collision detection
     private void SetupShapedGrid(Vector3[] bbPoints)
     {
         left = right = top = bottom = Vector2.zero;
@@ -156,6 +161,7 @@ public class PickupObjects : MonoBehaviour
         GetShapedGrid(grid);
     }
 
+    // Determines the rectangular confines of the object's bounding box
     private void GetRectConfines(Vector3[] bbPoints)
     {
         Vector3 bbPoint;
@@ -183,6 +189,7 @@ public class PickupObjects : MonoBehaviour
         }
     }
 
+    // Creates a grid of points for obstacle detection
     private Vector3[,] SetupGrid()
     {
         float rectHrLength = right.x - left.x;
@@ -208,6 +215,7 @@ public class PickupObjects : MonoBehaviour
         return grid;
     }
 
+    // Refines the grid to include only valid points for collision checks
     private void GetShapedGrid(Vector3[,] grid)
     {
         shapedGrid.Clear();
@@ -218,6 +226,7 @@ public class PickupObjects : MonoBehaviour
         }
     }
 
+    // Casts a ray from the camera towards a grid point to check for collisions
     private RaycastHit CastTowardsGridPoint(Vector3 gridPoint, LayerMask layers)
     {
         Vector3 worldPoint = transform.TransformPoint(gridPoint);
